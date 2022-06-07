@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right,black 50%, white 50%);
+  height: 100vh;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.webDeveloper{
+  border-radius: 15px ;
+  mix-blend-mode: difference;
+  color: black;
+  background: white;
+  transform: skewY(-2deg);
+}
+.funWithProgramming{
+  border-radius: 15px ;
+  mix-blend-mode: difference;
+  color: black;
+  background: white;
+  transform: skewY(2deg);
+}
+.links-in-navbar{
+  margin-top: -60px;
+  padding-right: 10px;
+}
+.image-in-navbar{
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (min-width: 1300px) {
+  .links-in-navbar{
+    padding-right: 100px;
+    font-size: 24px;
+  }
+  .container-on-home-page{
+    font-size: 60px;
+    padding-left: 50px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .links-in-navbar {
+    padding-right: 50px;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container-on-home-page{
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container-on-home-page{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container-on-home-page{
+    font-size: 16px;
+  }
+}
+.container-on-home-page{
+  padding-top: 200px;
+  font-family: 'Permanent Marker', cursive;
+}
+.social-icon{
+  height: 7vh;
 }
