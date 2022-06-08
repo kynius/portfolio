@@ -1,21 +1,30 @@
 import './App.css';
-import {Col, Container, Icon, Row} from "react-materialize";
-import my_photo from './img/me.jpeg'
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Layout from "./Layout";
+import Projects from "./Projects";
+import Contact from "./Contact";
 function App() {
   return (
     <>
-        <Container className={'container-on-home-page'}>
-            <Row>
-                <Col style={{mixBlendMode: "difference"}} className={'white-text'}>Hey my name is Krzysztof</Col> 
-                <Col>🙋‍♂️</Col>
-            </Row>
-            <Row> 
-                <Col className={'white-text'}>I'm a </Col>
-                <Col className={'webDeveloper'}>full-stack web developer</Col>
-            </Row>
-            <Row style={{mixBlendMode: "difference"}} className={'white-text'}><Col>based in Poland. I'm having</Col></Row>
-            <Row style={{mixBlendMode: "difference"}} className={'white-text'}><Col>a lot of</Col><Col className={'funWithProgramming'}>fun with programming</Col></Row>
-        </Container>
+    <Layout/>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path={'/'}>
+                    <Home/>
+                </Route>
+                <Route path={'/projects'}>
+                    <Projects/>
+                </Route>
+                <Route path={'/about'}>
+                    <About/>
+                </Route>
+                <Route path={'/contact'}>
+                    <Contact/>
+                </Route>
+            </Switch>
+        </BrowserRouter>
     </>
   );
 }
