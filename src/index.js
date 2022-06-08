@@ -27,7 +27,7 @@ root.render(
           </div>
       </div>
       <App/>
-      <footer style={{position:'absolute', bottom:'0', minWidth:'100%', mixBlendMode: 'difference'}} className={'social-icon white center'}>
+      <footer style={{position:'absolute', bottom:'0', minWidth:'100%', mixBlendMode: 'difference'}} className={'footer white center'}>
               <a href={''}><img alt={'github icon'} className={'social-icon'} src={github_icon}/></a>
               <a href={''}><img alt={'linkedin icon'} className={'social-icon'} src={linkedin_icon}/></a>
               <a href={''}><img alt={'twitter icon'} className={'social-icon'} src={twitter_icon}/></a>
