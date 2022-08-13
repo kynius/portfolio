@@ -1,7 +1,9 @@
 function About() {
     return (
         <>
-           cos 
+            <div style={{mixBlendMode: 'difference'}} className={'white-text center'}>
+                cos
+            </div>
         </>
     );
 }

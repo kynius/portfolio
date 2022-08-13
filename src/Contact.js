@@ -9,7 +9,7 @@ function Contact() {
                         <input type={'text'} className={'browser-default center nickname-input'} placeholder={"What's your name?"} defaultValue={""}/>
                     </Col>  
                     <Col l={6} m={12} s={12} offset={'l3'} style={{paddingTop: '40px'}}>
-                        <input type={'text'} className={'browser-default center nickname-input'} placeholder={"Let's talk about coffe!"}/>
+                        <textarea style={{height: '200px', resize: 'none', paddingLeft: '10px', paddingRight: '10px'}} className={'browser-default center nickname-input'} placeholder={"Let's talk about coffe!"}/>
                     </Col>
                 </Row>
             </Container>
